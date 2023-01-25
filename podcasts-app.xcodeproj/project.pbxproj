@@ -7,16 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FDEC0D83297F91DD0065B151 /* podcasts_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEC0D82297F91DD0065B151 /* podcasts_appApp.swift */; };
-		FDEC0D85297F91DD0065B151 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEC0D84297F91DD0065B151 /* ContentView.swift */; };
+		FD1278F7297FAF1F00D52A88 /* DownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1278F6297FAF1F00D52A88 /* DownloadView.swift */; };
+		FD1278F9297FAF2F00D52A88 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1278F8297FAF2F00D52A88 /* SearchView.swift */; };
+		FD1278FD297FAF5E00D52A88 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1278FC297FAF5E00D52A88 /* FavoritesView.swift */; };
+		FD127900297FB5AD00D52A88 /* PlaceholderImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1278FF297FB5AD00D52A88 /* PlaceholderImage.swift */; };
+		FDEC0D83297F91DD0065B151 /* PodcastsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEC0D82297F91DD0065B151 /* PodcastsApp.swift */; };
+		FDEC0D85297F91DD0065B151 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEC0D84297F91DD0065B151 /* MainTabView.swift */; };
 		FDEC0D87297F91DE0065B151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDEC0D86297F91DE0065B151 /* Assets.xcassets */; };
 		FDEC0D8A297F91DE0065B151 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDEC0D89297F91DE0065B151 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD1278F6297FAF1F00D52A88 /* DownloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadView.swift; sourceTree = "<group>"; };
+		FD1278F8297FAF2F00D52A88 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		FD1278FC297FAF5E00D52A88 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		FD1278FF297FB5AD00D52A88 /* PlaceholderImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderImage.swift; sourceTree = "<group>"; };
 		FDEC0D7F297F91DD0065B151 /* podcasts-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "podcasts-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDEC0D82297F91DD0065B151 /* podcasts_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = podcasts_appApp.swift; sourceTree = "<group>"; };
-		FDEC0D84297F91DD0065B151 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FDEC0D82297F91DD0065B151 /* PodcastsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastsApp.swift; sourceTree = "<group>"; };
+		FDEC0D84297F91DD0065B151 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		FDEC0D86297F91DE0065B151 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDEC0D89297F91DE0065B151 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +40,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD1278FE297FB59200D52A88 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				FD1278FF297FB5AD00D52A88 /* PlaceholderImage.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
 		FDEC0D76297F91DD0065B151 = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +67,9 @@
 		FDEC0D81297F91DD0065B151 /* podcasts-app */ = {
 			isa = PBXGroup;
 			children = (
-				FDEC0D82297F91DD0065B151 /* podcasts_appApp.swift */,
-				FDEC0D84297F91DD0065B151 /* ContentView.swift */,
-				FDEC0D86297F91DE0065B151 /* Assets.xcassets */,
+				FD1278FE297FB59200D52A88 /* Custom Views */,
+				FDEC0D91297FAE580065B151 /* App */,
+				FDEC0D90297FAE480065B151 /* Screens */,
 				FDEC0D88297F91DE0065B151 /* Preview Content */,
 			);
 			path = "podcasts-app";
@@ -65,6 +81,26 @@
 				FDEC0D89297F91DE0065B151 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FDEC0D90297FAE480065B151 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FDEC0D84297F91DD0065B151 /* MainTabView.swift */,
+				FD1278F6297FAF1F00D52A88 /* DownloadView.swift */,
+				FD1278F8297FAF2F00D52A88 /* SearchView.swift */,
+				FD1278FC297FAF5E00D52A88 /* FavoritesView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FDEC0D91297FAE580065B151 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FDEC0D86297F91DE0065B151 /* Assets.xcassets */,
+				FDEC0D82297F91DD0065B151 /* PodcastsApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDEC0D85297F91DD0065B151 /* ContentView.swift in Sources */,
-				FDEC0D83297F91DD0065B151 /* podcasts_appApp.swift in Sources */,
+				FD1278FD297FAF5E00D52A88 /* FavoritesView.swift in Sources */,
+				FD1278F9297FAF2F00D52A88 /* SearchView.swift in Sources */,
+				FD1278F7297FAF1F00D52A88 /* DownloadView.swift in Sources */,
+				FD127900297FB5AD00D52A88 /* PlaceholderImage.swift in Sources */,
+				FDEC0D85297F91DD0065B151 /* MainTabView.swift in Sources */,
+				FDEC0D83297F91DD0065B151 /* PodcastsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,9 +322,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.compilery.podcasts-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -311,9 +354,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.compilery.podcasts-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
